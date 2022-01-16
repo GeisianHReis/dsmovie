@@ -20,7 +20,7 @@ public class User {
 		this.email = email;
 	}
 	
-	private User() {
+	public User() {
 		
 	}
 
