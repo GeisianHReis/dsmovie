@@ -6,7 +6,6 @@ public class ScoreDTO {
 	private String email;
 	private Double score;
 	
-	
 	public Long getMovieId() {
 		return movieI;
 	}
