@@ -1,8 +1,6 @@
 package com.projeto.dsmovie.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -27,6 +25,7 @@ public class ScoreService {
 	@Autowired
 	private ScoreRepository scoreRepository;
 	
+	@Transactional
 	public MovieDTO saveScore(ScoreDTO dto) {
 		User user = userRepository.findByEmail(dto.getEmail());
 		if (user == null) {
